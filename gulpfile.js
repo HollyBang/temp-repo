@@ -10,7 +10,7 @@ const browserSync = require("browser-sync");
 const reload = browserSync.reload;
 
 
-gulp.task('html:build', function () {
+gulp.task('html', function () {
     gulp.src('./src/*.html') 
         .pipe(rigger()) 
         .pipe(gulp.dest('./dist')) 
