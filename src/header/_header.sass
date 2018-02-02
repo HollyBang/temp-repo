@@ -1,6 +1,73 @@
 .просто__клас_заголовка
     color: blue
     font-size: 44px
+    font-family: 'Cinzel Decorative', cursive
 .dizayner
     color: red
     border: 2px solid black
+
+.header
+    display: flex
+    flex-flow: row wrap
+    align-content: flex-start
+    background-color: #56d351
+    align-items: center
+    margin-bottom: 10px
+.header__title
+    width: calc(98% - 56px)
+    text-align: center
+
+.menu
+    width: 100%
+.menu__nav
+    display: flex
+    background-color: #29E929
+    list-style: none
+    margin: 0
+    padding: 0
+    justify-content: space-around
+.menu__link
+    display: block
+    font-size: 16px
+    padding: 10px
+    text-decoration: none
+    color: black
+    &:hover
+        background-color: grey
+
+.menu__dropdown-content
+    display: block
+    position: absolute
+    background-color: #f9f9f9
+    min-width: 160px
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    z-index: 1
+    height: 0px
+    overflow: hidden
+    transition: all 0.5s
+
+.menu__dropbtn
+    display: block
+    font-size: 25px
+    border: none
+    cursor: pointer
+    padding: 10px
+    text-decoration: none
+    color: black
+    position: relative
+    text-align: center
+.menu__dropdown
+    flex-grow: 1
+    transition: all 0.5s
+    &:hover 
+        background-color: #f1f1f1
+    &:hover .menu__dropdown-content
+        height: 114px
+
+@media screen and (max-width: 380px)
+    .menu__nav
+        flex-direction: column
+    .header__title
+        width: 100%
+    .header__logo
+        display: none

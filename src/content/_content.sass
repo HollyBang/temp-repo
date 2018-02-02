@@ -4,22 +4,34 @@
     justify-content: space-around
     flex-wrap: nowrap
     flex-direction: row
+    margin-bottom: 10px
+    // flex-flow: row wrap media
 .content__title
     text-align: center
+    font-size: 40px
+    margin: 15px
+    text-transform: uppercase
+    font-family: 'Cinzel Decorative', cursive
+.content__title_normal-font
+    font-family: none
 .content__section
     width: auto
     background-color: #2AE929
     margin: 5px
 
-.content__aside
-    flex: 50rem
-    background-color: #2AE929
-    margin: 5px
 .content__photos
     display: flex
     flex-direction: column
     align-items: center
-
+    padding-left: 5px
+.content__aside
+    flex: 50rem
+    background-color: #2AE929
+    margin: 5px
 .content__photo
     max-width: 300px
     margin-bottom: 5px
+
+@media screen and (max-width: 530px)
+    .content
+        flex-flow: row wrap
